@@ -6,7 +6,7 @@ import { BsBuilding } from 'react-icons/bs'
 import style from './Sidebar.module.css'
 import { connect } from 'react-redux'
 
-import image from '../../../assets/images/logo.png'
+import image from '../../../assets/images/icon.png'
 
 
 function Sidebar(props) {
@@ -91,7 +91,7 @@ function Sidebar(props) {
                                     props.clicked('Grants')
                                 }}
                             >
-                                Grants
+                                Orders
                             </h4>
                         </div>
                         {/* <div className={style.link}>

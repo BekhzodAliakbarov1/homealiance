@@ -4,11 +4,11 @@ import Step from '../Steps/Step';
 import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bookNow, addProduct } from '../../actions'
-import {useTranslation} from 'react-i18next'
+import { useTranslation } from 'react-i18next'
 
 
 const Book = props => {
-    const {t}=useTranslation();
+    const { t } = useTranslation();
     return (
         <div className={style.main}>
             {
@@ -20,21 +20,24 @@ const Book = props => {
                 <Step count={6} />
                 <div className={style.form}>
                     <h1>{t("book.formh1")}</h1>
-                    <Link to='/' onClick={() => props.addProduct('orders', 
-                    {
-                        data: props.selectedData,
-                        serviceType: props.serviceType,
-                        description: props.describtion,
-                        date: props.dateTime.date,
-                        time: props.dateTime.time,
-                        email: props.userInformation.email,
-                        name: props.userInformation.firstName,
-                        number: props.userInformation.number,
-                        AdressStreet: props.adress.street,
-                        AdressDistrict: props.adress.district,
-                        lat: props.currentLocation.lat,
-                        lang: props.currentLocation.lang                    
-                    })}>
+                    <Link to='/' onClick={() => {
+                        props.addProduct('orders',
+                            {
+                                data: props.selectedData,
+                                serviceType: props.serviceType,
+                                description: props.describtion,
+                                date: props.dateTime.date,
+                                time: props.dateTime.time,
+                                email: props.userInformation.email,
+                                name: props.userInformation.firstName,
+                                number: props.userInformation.number,
+                                AdressStreet: props.adress.street,
+                                AdressDistrict: props.adress.district,
+                                lat: props.currentLocation.lat,
+                                lang: props.currentLocation.lang
+                            })
+                        window.location.reload()
+                    }}>
                         {t("book.formlink")}
                     </Link>
                 </div>

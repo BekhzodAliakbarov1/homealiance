@@ -15,7 +15,8 @@ import Step from '../Steps/Step';
 import Loader from "react-loader-spinner";
 import { connect } from 'react-redux'
 import { fetchCurentLocation, fetchAdress } from '../../actions'
-import {useTranslation} from 'react-i18next'
+import { useTranslation } from 'react-i18next'
+import { Fragment } from 'react';
 
 
 
@@ -42,7 +43,7 @@ const reducer = (state = [], action) => {
     }
 }
 const Adress = props => {
-    const {t}=useTranslation();
+    const { t } = useTranslation();
     const [modal, setmodal] = useState(false)
     const [modal2, setmodal2] = useState(false)
     const [state, dispatch] = useReducer(reducer, initialState)
@@ -88,7 +89,7 @@ const Adress = props => {
                     </h2>
                     <div className={style.buttons}>
                         <div className={style.btn} onClick={curentposition}>
-                        {t("adress.btns.b1")}
+                            {t("adress.btns.b1")}
                         </div>
                         <div className={style.btn} onClick={() => setmodal(true)}>
                             {t("adress.btns.b2")}
@@ -105,17 +106,17 @@ const Adress = props => {
                             <h2>{t("adress.modal1.t")}</h2>
                             <IoMdClose onClick={() => setmodal(false)} />
                         </div>
-                        <label >{t("adress.modal1.input1label")}</label>
+                        <label >{t("adress.modal1.inputs.input1label")}</label>
                         <input
                             type='text'
-                            placeholder={t("adress.modal1.input1placeholder")}
+                            placeholder={t("adress.modal1.inputs.input1placeholder")}
                             value={state.street}
                             required
                             onChange={(e) => dispatch({ type: 'STREET', payload: e.target.value })} />
-                        <label >{t("adress.modal1.input2label")}</label>
+                        <label >{t("adress.modal1.inputs.input2label")}</label>
                         <input
                             type='text'
-                            placeholder={t("adress.modal1.input2placeholder")}
+                            placeholder={t("adress.modal1.inputs.input2placeholder")}
                             value={state.district}
                             required
                             onChange={(e) => dispatch({ type: 'DISTRICT', payload: e.target.value })} />
@@ -144,13 +145,13 @@ const Adress = props => {
                                         }}
                                     >
                                         {t("adress.modal1.inputs.continue")}
-                                </Link>
+                                    </Link>
                                     : <Link
                                         to='/service/location'
                                         className={style.btn}
                                     >
                                         {t("adress.modal1.inputs.fill")}
-                            </Link>
+                                    </Link>
                             }
                         </div>
                     </form>
@@ -160,17 +161,21 @@ const Adress = props => {
             }
             {
                 modal2 && (
-                    (loader)
-                        ? <div className={`${style.modal} ${style.black}`}>
-                            <Loader
-                                type="Puff"
-                                color="#00BFFF"
-                                height={300}
-                                width={300}
-                                timeout={3000} //3 secs
-                            />
-                        </div>
-                        : <div className={`${style.modal} ${style.black}`}>
+                    <Fragment>
+
+
+                        {
+                            loader && <div className={`${style.modalBest} ${style.black}`}>
+                                <Loader
+                                    type="Puff"
+                                    color="#00BFFF"
+                                    height={300}
+                                    width={300}
+                                    timeout={3000} //3 secs
+                                />
+                            </div>
+                        }
+                        <div className={`${style.modal} ${style.black}`}>
                             <div className={style.modalContainer}>
                                 <IoMdClose onClick={() => setmodal2(false)} />
                                 <YMaps style={{ width: '100%', height: '100vh' }} >
@@ -195,6 +200,7 @@ const Adress = props => {
                                 </Link>
                             </div>
                         </div>
+                    </Fragment>
                 )}
         </div >
     )

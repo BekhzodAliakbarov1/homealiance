@@ -44,7 +44,7 @@ function Main(props) {
             <Sidebar clicked={clicked} />
             <div className={style.content}>
                 <div className={style.searcher}>
-                    <h1>TOSHKENT DAVLAT YURIDIK UNIVERSITETINING IXTISOSLASHTIRILGAN FILIALI</h1>
+                    <h1>CELEBRO PRO</h1>
                     <div className={style.logOut}>
                         <button onClick={() => window.location.reload()} type="button">Log Out</button>
                     </div>
