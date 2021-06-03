@@ -19,7 +19,7 @@
   font-weight: 500;
   color: #000000;
   line-height: 1.5;
-  margin: 0;
+  margin: 10px;
   padding: 0;
   letter-spacing: 0.02em;
   text-align: center;
@@ -64,7 +64,7 @@
   line-height: 1.95;
   font-size: 14px;
   color: #818190;
-  margin: 2px;
+  margin: 5px;
 }
 @media screen and (max-width: 755px) {
   .logo {

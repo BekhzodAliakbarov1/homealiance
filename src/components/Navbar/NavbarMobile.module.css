@@ -24,10 +24,11 @@
     align-items: center;
   }
   .left {
-    width: 51px;
-    height: 34px;
+    width: 150px;
+    height: 100px;
     background-position: center;
     background-size: contain;
+    background-repeat: no-repeat;
   }
   .right {
     display: flex;
@@ -156,4 +157,16 @@
   margin-top: 15px;
   outline: none;
   border: 0px;
+}
+@media screen and (max-width: 550px) {
+  .left {
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .left {
+    width: 100px;
+    height: 62px;
+  }
 }

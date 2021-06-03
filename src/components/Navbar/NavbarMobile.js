@@ -3,12 +3,12 @@ import logo from '../../assets/images/icon.png'
 import style from './NavbarMobile.module.css'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { Link } from 'react-router-dom';
-import {useTranslation} from 'react-i18next'
+import { useTranslation } from 'react-i18next'
 function NavbarMobile() {
     const { t, i18n } = useTranslation();
     const changeLanguage = (lang) => {
         i18n.changeLanguage(lang);
-      }
+    }
     const [click, setClick] = useState(false)
     if (window.location.pathname.includes('admin')) {
         return null
@@ -25,20 +25,26 @@ function NavbarMobile() {
             <div className={click ? `${style.mobileMenu} ${style.mobileMenuOpen}` : `${style.mobileMenu} ${style.mobileMenuClose}`}>
                 <div className={style.content}>
                     <div className={style.button}>
-                        <Link to='/services'>{t("navbar.btn")}</Link>
+                        <Link onClick={() => setClick(false)} to='/services'>{t("navbar.btn")}</Link>
                     </div>
-                    <Link to="/services">{t("navbar.link1")}</Link>
+                    <Link onClick={() => setClick(false)} to="/services">{t("navbar.link1")}</Link>
                     <div className={style.subLink}>
-                        <Link to="/services">{t("navbar.sublink1")}</Link>
-                        <Link to="/services">{t("navbar.sublink2")}</Link>
-                        <Link to="/services">{t("navbar.sublink3")}</Link>
-                        <Link to="/services">{t("navbar.sublink4")}</Link>
-                        <Link to="/services">{t("navbar.sublink5")}</Link>
-                        
+                        <Link to="/services" onClick={() => setClick(false)}>{t("navbar.sublink1")}</Link>
+                        <Link to="/services" onClick={() => setClick(false)}>{t("navbar.sublink2")}</Link>
+                        <Link to="/services" onClick={() => setClick(false)}>{t("navbar.sublink3")}</Link>
+                        <Link to="/services" onClick={() => setClick(false)}>{t("navbar.sublink4")}</Link>
+                        <Link to="/services" onClick={() => setClick(false)}>{t("navbar.sublink5")}</Link>
+
                     </div>
-                    <Link to="/about">{t("navbar.link2")}</Link>
-                    <button onClick={()=> changeLanguage('ru')} >RU</button>
-                    <button onClick={()=> changeLanguage('uz')} >UZ</button>
+                    <Link onClick={() => setClick(false)} to="/about">{t("navbar.link2")}</Link>
+                    <button onClick={() => {
+                        changeLanguage('ru')
+                        setClick(false)
+                    }} >RU</button>
+                    <button onClick={() => {
+                        changeLanguage('uz')
+                        setClick(false)
+                    }} >UZ</button>
                 </div>
             </div>
         </div>
