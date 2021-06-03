@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  position: relative;
+  min-height: 100vh;
+  background-color: #557085;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: 0.5s;
+  width: 100vw;
+}
+.sec {
+  z-index: 100;
+  position: fixed;
+}
+.container {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  background-color: #fff;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+.user {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.imgBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: center left;
+  transition: 0.5s;
+}
+.formBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 40px;
+  transition: 0.5s;
+}
+.formBx h2 {
+  padding-top: 100px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #555;
+}
+.formBx input {
+  width: 100%;
+  padding: 10px;
+  background-color: #f5f5f5;
+  color: #333;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 14px;
+  margin: 8px 0;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.formBx input[type="submit"] {
+  max-width: 100px;
+  background-color: #677eff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+.formBx input[type="submit"]:hover {
+  background-color: #3b51cc;
+}
+.wrongText {
+  font-size: 15px;
+  font-weight: 400;
+  color: red;
+  padding-top: 30px;
+}
+.formBx input.wrong {
+  border: 1px solid red;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 350px;
+    height: 500px;
+    max-height: 100%;
+  }
+  .user {
+    flex-direction: column;
+  }
+  .imgBx,
+  .formBx {
+    width: 100%;
+    height: 50%;
+  }
+  .formBx h2 {
+    padding-top: 0px;
+  }
+  .wrongText {
+    padding-top: 0px;
+  }
+}

@@ -1,0 +1,55 @@
+.main {
+  width: 100;
+  height: 100vh;
+  position: relative;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.container {
+  width: 60%;
+  height: 150px;
+  background-color: #fff;
+  position: absolute;
+  box-shadow: 1px -2px 20px 20px #dad5d5;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.container h1 {
+  font-size: 20px;
+  font-weight: 200;
+  color: red;
+  margin-top: 30px;
+}
+.buttons {
+  width: 90%;
+  margin: auto;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.buttons a {
+  width: 40%;
+  height: 100%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.7;
+  transition: all ease 0.3s;
+}
+.buttons a:nth-child(1) {
+  background-color: blue;
+}
+.buttons a:hover {
+  opacity: 1;
+  transition: all ease 0.3s;
+}

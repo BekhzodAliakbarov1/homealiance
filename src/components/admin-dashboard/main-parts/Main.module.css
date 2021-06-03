@@ -1,0 +1,70 @@
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+.content {
+  width: 100%;
+  margin-left: 280px;
+  z-index: 100;
+}
+.searcher {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 101;
+}
+.searcher h1 {
+  font-size: 18px;
+  width: 80%;
+  font-weight: 400;
+  text-align: center;
+  color: #011b7c;
+  line-height: 30px;
+  letter-spacing: 3px;
+  text-shadow: 0px 0px 10px #011b7c;
+  animation: animateText 8s linear infinite;
+}
+.logOut {
+  width: 110px;
+  height: 30px;
+}
+.logOut button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: #011b7c;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-weight: 300;
+}
+.logOut button:hover {
+  background-color: #1536ac;
+  color: cornsilk;
+  box-shadow: 0px 0px 10px #1536ac;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+
+@keyframes animateText {
+  0%,
+  100% {
+    text-shadow: 0px 0px 10px #011b7c;
+  }
+  50% {
+    text-shadow: 0px 0px 0px #011b7c;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
