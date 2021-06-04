@@ -92,7 +92,7 @@
   font-weight: 400;
   line-height: 1.5;
 }
-form h3 {
+.main form h3 {
   font-size: 20px;
   font-weight: 400;
   color: #000000;
@@ -116,7 +116,7 @@ form h3 {
   height: 100%;
   margin: 6px;
 }
-form label {
+.main form label {
   font-size: 14px;
   display: block;
   font-weight: 400;
@@ -124,7 +124,7 @@ form label {
   margin: 0 0 6px 0;
   padding: 0;
 }
-form input {
+.main form input {
   border-radius: 8px;
   font-size: 16px;
   line-height: 1.5;
@@ -138,12 +138,12 @@ form input {
   transition: all 0.5s ease;
   margin-bottom: 15px;
 }
-form input:focus {
+.main form input:focus {
   transition: all 0.5s ease;
   box-shadow: 0 0 0 3px rgba(44, 55, 183, 0.7),
     0 3px 3px 0 rgba(44, 55, 183, 0.1);
 }
-form button {
+.main form button {
   display: inline-block;
   font-size: 16px;
   line-height: 1;
@@ -160,7 +160,7 @@ form button {
   transition: all 0.5s ease;
   margin-top: 15px;
 }
-form button:active {
+.main form button:active {
   transition: all 0.5s ease;
   transform: scale(0.9);
 }
@@ -212,13 +212,13 @@ form button:active {
   .header h2 {
     font-size: 22px;
   }
-  form label {
+  .main form label {
     font-size: 12px;
   }
-  form input {
+  .main form input {
     font-size: 14px;
   }
-  form button {
+  .main form button {
     font-size: 14px;
   }
 }

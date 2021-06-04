@@ -16,7 +16,6 @@ function Login(props) {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [keyword, setKeyword] = useState('')
-    console.log(props);
 
     const submitted = e => {
         e.preventDefault()

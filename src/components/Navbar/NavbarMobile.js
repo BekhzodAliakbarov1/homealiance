@@ -37,6 +37,7 @@ function NavbarMobile() {
 
                     </div>
                     <Link onClick={() => setClick(false)} to="/about">{t("navbar.link2")}</Link>
+                    <Link to='/orders' onClick={() => setClick(false)}>{t("navbar.link3")}</Link>
                     <button onClick={() => {
                         changeLanguage('ru')
                         setClick(false)

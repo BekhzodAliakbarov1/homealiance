@@ -2,13 +2,13 @@ import React from 'react'
 import style from './Navbar.module.css'
 import logo from '../../assets/images/icon.png'
 import { Link } from 'react-router-dom'
-import {useTranslation} from 'react-i18next'
+import { useTranslation } from 'react-i18next'
 
 
 function Navbar() {
     const { t, i18n } = useTranslation();
     const changeLanguage = (lang) => {
-      i18n.changeLanguage(lang);
+        i18n.changeLanguage(lang);
     }
     if (window.location.pathname.includes('admin')) {
         return null
@@ -25,11 +25,14 @@ function Navbar() {
                         <li>
                             <Link to='/about'>{t("navbar.link2")}</Link>
                         </li>
+                        <li>
+                            <Link to='/orders'>{t("navbar.link3")}</Link>
+                        </li>
                     </ul>
                 </div>
                 <div className={style.right}>
-                    <button onClick={()=> changeLanguage('ru')} >RU</button>
-                    <button onClick={()=> changeLanguage('uz')} >UZ</button>
+                    <button onClick={() => changeLanguage('ru')} >RU</button>
+                    <button onClick={() => changeLanguage('uz')} >UZ</button>
                     <h2>+998 (99) 602 66 11</h2>
                     <div className={style.button}>
                         <Link to='/services'>{t("navbar.btn")}</Link>

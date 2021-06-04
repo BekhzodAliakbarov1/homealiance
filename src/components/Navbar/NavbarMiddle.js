@@ -40,6 +40,7 @@ function NavbarMiddle() {
                         <Link to="/services" onClick={() => setClick(false)}>{t("navbar.sublink5")}</Link>
                     </div>
                     <Link to="/" onClick={() => setClick(false)}>{t("navbar.link2")}</Link>
+                    <Link to='/orders' onClick={() => setClick(false)}>{t("navbar.link3")}</Link>
                 </div>
             </div>
         </div>

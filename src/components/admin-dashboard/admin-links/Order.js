@@ -33,6 +33,8 @@ function Order(props) {
                             <div className={style.twoButtons}>
                                 {props.admin.orderPermission === 'TRUE' && <Link to='/admin/delete/orders' onClick={() => props.selectedAnyItem(order)}>Delete</Link>}
                                 {props.admin.orderPermission === 'TRUE' && <Link to='/admin/read/orders' onClick={() => props.ReadOrder(order)}> Read</Link>}
+                                {props.admin.orderPermission === 'TRUE' && <Link to='/admin/edit/orders' onClick={() => props.selectedAnyItem(order)}> Edit</Link>}
+
                             </div>
                         </div>
                     ))
@@ -55,6 +57,7 @@ function Order(props) {
                                     <div className={style.twoButtons}>
                                         {props.admin.orderPermission === 'TRUE' && <Link to='/admin/delete/orders' onClick={() => props.selectedAnyItem(order)}>Delete</Link>}
                                         {props.admin.orderPermission === 'TRUE' && <Link to='/admin/read/orders' onClick={() => props.ReadOrder(order)}> Read</Link>}
+                                        {props.admin.orderPermission === 'TRUE' && <Link to='/admin/edit/orders' onClick={() => props.selectedAnyItem(order)}> Edit</Link>}
                                     </div>
                                 </div >
                             )

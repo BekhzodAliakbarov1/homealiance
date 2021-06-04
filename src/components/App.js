@@ -22,6 +22,8 @@ import AdminDelete from './admin-dashboard/admin-add/AdminDelete';
 import AdminRead from './admin-dashboard/readEach/AdminRead';
 import OrderDelete from './admin-dashboard/admin-add/OrderDelete';
 import OrderRead from './admin-dashboard/readEach/OrderRead';
+import Orders from './OrdersList/Orders';
+import OrderEdit from './admin-dashboard/admin-add/OrderEdit';
 
 function App() {
     return (
@@ -82,6 +84,13 @@ function App() {
                     </Route>
                     <Route exact path="/admin/read/orders">
                         <OrderRead />
+                    </Route>
+                    <Route exact path="/admin/edit/orders">
+                        <OrderEdit />
+                    </Route>
+
+                    <Route exact path="/orders">
+                        <Orders />
                     </Route>
                 </Switch>
                 <Footer />
