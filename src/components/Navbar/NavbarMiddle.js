@@ -27,9 +27,9 @@ function NavbarMiddle() {
           <button onClick={() => changeLanguage("ru")}>RU</button>
           <button onClick={() => changeLanguage("uz")}>UZ</button>
           <h2>+998 (99) 602 66 11</h2>
-          <div className={style.button}>
+          {/* <div className={style.button}>
             <Link to="/services">{t("navbar.btn")}</Link>
-          </div>
+          </div> */}
           {click ? (
             <AiOutlineClose onClick={() => setClick(false)} />
           ) : (
