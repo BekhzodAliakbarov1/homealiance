@@ -170,7 +170,7 @@
   width: calc((80%-300px) / 3);
   height: 2px;
   background: linear-gradient(90deg, red, green, blue, white, yellow);
-  animation: animateLine 1s infinite cubic-bezier(1, 1, 0, 0) forwards;
+  /* animation: animateLine 1s infinite cubic-bezier(1, 1, 0, 0) forwards; */
 }
 @keyframes animateImage {
   from {

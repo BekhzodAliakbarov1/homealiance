@@ -1,177 +1,229 @@
 {
   "home1": {
-    "h1": "Биз буни тузатамиз. Сиз дам оласиз.",
-    "link": "Хизматга буюртма беринг"
+    "h1": "Biz buni tuzatamiz. Siz dam olasiz.",
+    "link": "Xizmatga buyurtma bering"
   },
   "home2": {
-    "h1": "Бугун сизга қандай ёрдам бера оламиз?",
-    "h2": "Бошлаймиз. Учрашувни белгилаш учун хизматни танланг"
+    "h1": "Bugun sizga qanday yordam bera olamiz?",
+    "h2": "Boshlaymiz. Uchrashuvni belgilash uchun xizmatni tanlang"
   },
   "home3": {
-    "h1": "Нима учун бизни танлайсиз",
-    "h2": "Бизни устун жиҳатимизни билиб олинг",
+    "h1": "Boshlaymiz. Uchrashuvni belgilash uchun xizmatni tanlang",
+    "h2": "Bizni ustun jihatimizni bilib oling",
     "card1": {
-      "h1": "Худди ўша кунги хизматни амалга оширамиз",
-      "p": "Фавқулодда вазиятлар ҳар қандай вақтда юз бериши мумкинлигини тушунамиз. Шунинг учун биз бозорда энг тезкор хизматни тақдим этишга интиламиз."
+      "h1": "Xuddi o‘sha kungi xizmatni amalga oshiramiz",
+      "p": "Favqulodda vaziyatlar har qanday vaqtda yuz berishi mumkinligini tushunamiz. Shuning uchun biz bozorda eng tezkor xizmatni taqdim etishga intilamiz."
     },
     "card2": {
-      "h1": "Битта ёрдам",
-      "p": "Биз сизнинг фикр-мулоҳазаларингизни тинглаймиз ва уйимиз эҳтиёжларини қондириш учун хизматлар портфелимизни доимий равишда янгилаб турамиз."
+      "h1": "Bitta yordam",
+      "p": "Biz sizning fikr-mulohazalaringizni tinglaymiz va uyimiz ehtiyojlarini qondirish uchun xizmatlar portfelimizni doimiy ravishda yangilab turamiz."
     },
     "card3": {
-      "h1": "Самарали технология",
-      "p": "Сизга ёқимли дам олишни таъминлаш учун рақамли эчимларимизни ишлаб чиқамиз. Сизга қулайлик учун сиз барча таъмирлаш ва таъмирлаш буюртмаларини Интернет орқали бошқаришингиз мумкин."
+      "h1": "Samarali texnologiya",
+      "p": "Sizga yoqimli dam olishni taʼminlash uchun raqamli echimlarimizni ishlab chiqamiz. Sizga qulaylik uchun siz barcha taʼmirlash va taʼmirlash buyurtmalarini Internet orqali boshqarishingiz mumkin."
     }
   },
   "about1": {
     "h1": "Уй эҳтиёжлари учун ишончли маслаҳатчи"
   },
   "about2": {
-    "h4": "Уй",
-    "h4span": "Биз ҳақимизда",
-    "h2": " Бу уйни таъмирлаш бўйича мутахассисларнинг бутун мамлакат бўйлаб тармоғи.",
-    "p": "Биз бутун мамлакат бўйлаб «оилаларга» уй шароитида «қулай, кенг қамровли» ва «профессионал» хизматларни тақдим этишга интиламиз, уй эгалари жиҳозларни таъмирлаш, иситиш ва ҳавони тозалаш, ҳаво сифати, санитария-тесисат ва электр таъминотига бўлган эҳтиёжларини қондириш учун «ишонадиган» пудратчиларни топишлари мумкин. хизматлар."
+    "h4": "Uy",
+    "h4span": "Biz haqimizda",
+    "h2": " Bu uyni taʼmirlash bo‘yicha mutaxassislarning butun mamlakat bo‘ylab tarmog‘i.",
+    "p": "Biz butun mamlakat bo‘ylab «oilalarga” uy sharoitida «qulay, keng qamrovli” va «professional” xizmatlarni taqdim etishga intilamiz, uy egalari jihozlarni taʼmirlash, isitish va havoni tozalash, havo sifati, sanitariya-tesisat va elektr taʼminotiga bo‘lgan ehtiyojlarini qondirish uchun «ishonadigan” pudratchilarni topishlari mumkin. xizmatlar."
   },
   "about3": {
-    "h2": " Сардор Умрдинов | Ижрочи директори",
-    "p": "Биз мижозларимизга «талаб бўйича», «энг яхши» уй «хизматлари» ни «тақдим этиш» учун «қатъиймиз». Бизнинг мақсадимиз дунёдаги ҳар қандай оила учун аниқ танлов бўлишдир."
+    "h2": "Ijrochi direktori",
+    "p": "Biz mijozlarimizga «talab bo‘yicha”, «eng yaxshi” uy «xizmatlari” ni «taqdim etish” uchun «qatʼiymiz”. Bizning maqsadimiz dunyodagi har qanday oila uchun aniq tanlov bo‘lishdir."
   },
   "about4": {
-    "h2": "Бизни олдинга силжитадиган нарса",
-    "p": "Барчамиз учун энг қадрли жой - уйимиз ҳақида ғамхўрлик қилишимизга ёрдам беринг.",
+    "h2": "Bizni oldinga siljitadigan narsa",
+    "p": "Barchamiz uchun eng qadrli joy - uyimiz haqida g‘amxo‘rlik qilishimizga yordam bering.",
     "block1": {
-      "h3": "Бизнинг қарашимиз",
-      "p": "Бу улар ишониши мумкин бўлган мутахассисларни излаётган уй эгалари учун компания. Биргаликда биз яхши хизмат ва профессионал мукаммалликни қадрини тушунадиган тажрибали пудратчилар ва уй эгаларининг ҳамжамиятини шакллантирмоқдамиз."
+      "h3": "Bizning qarashimiz",
+      "p": "Bu ular ishonishi mumkin bo‘lgan mutaxassislarni izlayotgan uy egalari uchun kompaniya. Birgalikda biz yaxshi xizmat va professional mukammallikni qadrini tushunadigan tajribali pudratchilar va uy egalarining hamjamiyatini shakllantirmoqdamiz."
     },
     "block2": {
-      "h3": "Бизнинг вазифамиз",
-      "p": "Бизнинг мақсадимиз - уйни таъмирлаш зарурати туғилганда уй эгалари ёдда тутадиган ва исталган вақтда, исталган жойда тезкор, ишончли ва сифатли хизмат кўрсатадиган ягона компания бўлиш."
+      "h3": "Bizning vazifamiz",
+      "p": "Bizning maqsadimiz - uyni taʼmirlash zarurati tug‘ilganda uy egalari yodda tutadigan va istalgan vaqtda, istalgan joyda tezkor, ishonchli va sifatli xizmat ko‘rsatadigan yagona kompaniya bo‘lish."
     },
     "block3": {
-      "h3": "Қадриятлар",
-      "p": "Мижозлар билан обсесён. Миқёси. Ўзгаришларни қабул қилинг. Мулкчилик. Барқарорлик. Ижро."
+      "h3": "Qadriyatlar",
+      "p": "Mijozlar bilan obsesyon. Miqyosi. O‘zgarishlarni qabul qiling. Mulkchilik. Barqarorlik. Ijro."
     }
   },
   "about5": {
-    "h2": "Sardor Umrdinov | Founder and CEO",
-    "p": "“CELEBRO PRO” Масъулияти чекланган жамияти 2021 йилда фаолият юритишни бошлаб, мамлакат худудида ахоли учун “хусусий” хизматлар бозоридан фойдаланиш учун ягона турдаги электрон платформа – “Хизматлар дунёси” ни ташкил этган. "
+    "h2": "Founder and CEO",
+    "p": " Masʼuliyati cheklangan jamiyati 2021 yilda faoliyat yuritishni boshlab, mamlakat xududida axoli uchun “xususiy” xizmatlar bozoridan foydalanish uchun yagona turdagi elektron platforma – “Xizmatlar dunyosi” ni tashkil etgan. "
   },
   "adress": {
-    "h1": "буюртма бериш",
-    "h3": "Учрашувни белгилаш учун хизматни танланг",
-    "h2": "Манзилни танланг",
+    "h1": "Buyurtma berish",
+    "h3": "Uchrashuvni belgilash uchun xizmatni tanlang",
+    "h2": "Manzilni tanlang",
     "btns": {
-      "b1": "Ҳозирги жойлашувни танлаш",
-      "b2": " Манзил қўшинг"
+      "b1": "Hozirgi joylashuvni tanlash",
+      "b2": " Manzil qo‘shing"
     },
     "modal1": {
-      "t": "Янги манзил қўшинг",
+      "t": "Yangi manzil qo‘shing",
       "inputs": {
-        "input1label": "Кўча, уй, ",
-        "input1placeholder": "Кўча, уй, ",
-        "input2label": "Туман",
-        "input2placeholder": "Туман",
-        "back": "Орқага",
-        "continue": "Давом этиш",
-        "fill": "Тўлдиринг"
+        "input1label": "Ko‘cha, uy, ",
+        "input1placeholder": "Ko‘cha, uy, ",
+        "input2label": "Tuman",
+        "input2placeholder": "Tuman",
+        "back": "Orqaga",
+        "continue": "Davom etish",
+        "fill": "To‘ldiring"
       }
     }
   },
   "book": {
-    "h1": "буюртма бериш",
-    "h3": "Учрашувни белгилаш учун хизматни танланг",
-    "formh1": "Буюртмани тасдиқлаш",
-    "formlink": "Буюртма қилиш"
+    "h1": "Buyurtma berish",
+    "h3": "Uchrashuvni belgilash uchun xizmatni tanlang",
+    "formh1": "Buyurtmani tasdiqlash",
+    "formlink": "Buyurtma qilish"
   },
   "contact": {
-    "h1": "буюртма бериш",
-    "h3": "Учрашувни белгилаш учун хизматни танланг",
+    "h1": "Buyurtma berish",
+    "h3": "Uchrashuvni belgilash uchun xizmatni tanlang",
     "form": {
-      "h2": "Фойдаланувчи ҳақида маълумот",
-      "h3": "Боғланиш учун маълумот",
-      "input1l": "Исмингиз",
-      "input1pl": "Исмингиз",
-      "input2l": "Телефон рақами",
+      "h2": "Foydalanuvchi haqida maʼlumot",
+      "h3": "Bog‘lanish uchun maʼlumot",
+      "input1l": "Ismingiz",
+      "input1pl": "Ismingiz",
+      "input2l": "Telefon raqami",
       "input2pl": "(99) 123-45-67",
-      "input3l": "Электрон почта",
+      "input3l": "Elektron pochta",
       "input3pl": "Email",
-      "continue": "Давом этиш"
+      "continue": "Davom etish"
     }
   },
   "date": {
-    "h1": "ruбуюртма бериш",
-    "h3": "Учрашувни белгилаш учун хизматни танланг",
+    "h1": "Buyurtma berish",
+    "h3": "Uchrashuvni belgilash uchun xizmatni tanlang",
     "form": {
-      "h1": "Сана ва вақтни танланг",
-      "h2": "Санани танланг ",
-      "today": "Бугун",
-      "tomorrow": "Эртага",
-      "nexttomorrow": "Эртадан кейин",
+      "h1": "Sana va vaqtni tanlang",
+      "h2": "Sanani tanlang ",
+      "today": "Bugun",
+      "tomorrow": "Ertaga",
+      "nexttomorrow": "Ertadan kegin",
       "time1": "8:00 - 12:00",
       "time2": "12: 00–17: 00",
       "time3": "17:00 - 20:00",
-      "continue": "Давом этиш"
+      "continue": "Davom etish"
     }
   },
   "description": {
-    "h1": "буюртма бериш",
-    "h3": "Учрашувни белгилаш учун хизматни танланг",
+    "h1": "Buyurtma berish",
+    "h3": "Uchrashuvni belgilash uchun xizmatni tanlang",
     "form": {
-      "h1": "тавсиф қўшиш",
-      "label": "Бизга нима бўлганини айтиб беринг",
-      "textarea": "Қанчалик кўп маълумот тақдим эцангиз, ишингиз тезроқ бўлади.",
-      "skip": "ўтказиб юбориш",
-      "continue": "Давом этиш"
+      "h1": "Tavsif qo`yish",
+      "label": "Bizga nima bo‘lganini aytib bering",
+      "textarea": "Qanchalik ko‘p maʼlumot taqdim esangiz, ishingiz tezroq bo‘ladi.",
+      "skip": "O`tkazib yuborish",
+      "continue": "Davom etish"
     }
   },
   "footer": {
-    "h1": "Ижтимоий тармоқ",
-    "h3": "Copyright © 2021 SELEBRO PRO (99) 602 66 11.",
+    "h1": "Ijtimoiy tarmoq",
+    "h3": "Copyright © 2021  (99) 602 66 11.",
     "h4": "Terms and Conditions Privacy Policy",
-    "devLink": "HBBH"
+    "devLink": ""
   },
   "information": {
-    "h1": "буюртма бериш",
-    "h3": "Учрашувни белгилаш учун хизматни танланг",
+    "h1": "Buyurtma berish",
+    "h3": "Uchrashuvni belgilash uchun xizmatni tanlang",
     "form": {
-      "h1": "Турини танланг",
-      "noServicesh2": "Илтимос, бир нечта хизматларни танланг !!!",
-      "back": "Орқага"
+      "h1": "Hizmat Turini tanlang",
+      "noServicesh2": "Iltimos, bir nechta xizmatlarni tanlang !!!",
+      "back": "Orqaga"
     }
   },
   "navbar": {
-    "link1": "Хизматлар",
-    "link2": "Биз ҳақимизда",
-    "link3": "Буюртмалар",
-    "sublink1": "Маиший техника",
-    "sublink2": "Тозалаш",
-    "sublink3": "Сантехника",
-    "sublink4": "Электроэнергия",
-    "sublink5": "Юк ташиш",
-    "btn": "буюртма бериш"
+    "link1": "Xizmatlar",
+    "link2": "Biz xaqimizda",
+    "link3": "Buyurtmalar",
+    "sublink1": "Maishiy texnika",
+    "sublink2": "Tozalash",
+    "sublink3": "santexnika",
+    "sublink4": "Elektroenergiye",
+    "sublink5": "Yuk tashish",
+    "btn": "Buyurtma berish"
   },
   "profile": {
-    "enter": "ro'yxatga olish"
+    "enter": "Ro'yxatga otish",
+    "h1": "Foydalanuvchi ma'lumotlari",
+    "name": "Ism",
+    "number": "Telefon raqami",
+    "location": "Manzil",
+    "region": "viloyat",
+    "city": "shaxar",
+    "street": "ko`cha",
+    "type": "Foydalanuvchi turi",
+    "edit": "Taxrirlash",
+    "change_password": "Passwordni o`zgartirish",
+    "log_out": "Chiqish",
+    "delete": "Profilni o`chirish",
+    "question_log_out": "Chiqishni hohlaysizmi?",
+    "close": "Orqaga",
+    "question_delete": "Profilni o`chirishni hohlaysizmi?",
+    "change_pass": "Passwordni o`zgartirish",
+    "current": "Xozirgi",
+    "new": "Yangi",
+    "confirm": "Tasdiqlash"
+  },
+  "register": {
+    "h1": "Ro`yhatdan o`tish",
+    "profile_picture": "Porifile rasm",
+    "email": "Email",
+    "first_name": "Ism",
+    "last_name": "Familya",
+    "password": "Password",
+    "confirm": "Tasdiqlash",
+    "number": "Telefon raqami",
+    "region": "Viloyat",
+    "city": "Shaxar",
+    "street": "Ko`cha",
+    "submit": "Tasdiqlash",
+    "already_have_account": "Akkaountingiz bormi?",
+    "signin": "Kirish",
+    "code": "Biz yuborgan kodni kiriting"
+  },
+  "signin": {
+    "h1": "Akkauntga kirish",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Kirish",
+    "forgot_pass": "Passwordni unutdingizmi?",
+    "incorrect": "email yoki password noto`g`ri"
+  },
+  "forgot": {
+    "h1": "Parolni yangilash",
+    "email": "Email",
+    "send": "Yuborish",
+    "incorrect": "email noto`g`ri",
+    "password": "Password",
+    "confirm": "Tasdiqlash",
+    "changepass": "Passwordni o  zgartiish"
   },
   "services": {
-    "h1": "буюртма бериш",
-    "h2": "Учрашувни белгилаш учун хизматни танланг"
+    "h1": "Buyurtma berish",
+    "h2": "Uchrashuvni belgilash uchun xizmatni tanlang"
   },
   "order": {
-    "h1": "Буюртмалар",
-    "h3": "Буюртмани телефон рақамингиз орқали қидиринг!",
-    "inputLabel": "Телефон рақами бўйича қидириш",
-    "inputPlaceholder": "Илтимос, камида 7 рақамни киритинг",
-    "span1": "Исми",
-    "span2": "Телефон рақами",
-    "span3": "Хизмат тури",
-    "span4": "Куни",
-    "span5": "Вақти",
-    "confirm1": "Қабул қилинди",
-    "confirm12": "Кутилмоқда",
-    "confirm2": "Ишчи юборилди",
-    "confirm3": "Тугатилди",
-    "btn1": "Қидириш",
-    "btn2": "Қидириш"
+    "h1": "Buyurtmalar",
+    "h3": "Buyurtmani Telefon raqamingiz orqali qidiring!",
+    "inputLabel": "Buyurtmani Telefon raqamingiz orqali qidiring!",
+    "span1": "Xizmat",
+    "span2": "Ma`lumot",
+    "span3": "Xizmat turi",
+    "span4": "Kuni",
+    "span5": "Vaqti",
+    "confirm1": "Qabul qilindi",
+    "confirm12": "Kutilmoqda",
+    "confirm2": "Ishchi yuborildi",
+    "confirm3": "Tugatildi",
+    "btn1": "Qidirish",
+    "btn2": "Qidirish"
   }
 }

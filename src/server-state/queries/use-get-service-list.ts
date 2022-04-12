@@ -1,9 +1,14 @@
 import { useQuery } from "react-query";
 import { request } from "../api";
 
-interface SingleService {
+export interface SingleService {
   id: number;
   name: string;
+  icon: {
+    file: string;
+    id: number;
+    thumbnail_150: string;
+  };
 }
 
 export const useServicesList = () =>

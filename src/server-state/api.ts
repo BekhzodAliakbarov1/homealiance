@@ -13,12 +13,13 @@ const request = {
 request.private.interceptors.request.use(
   (config) => {
     const accessToken = getStorage("accessToken");
+    const language = getStorage("i18nextLng");
     if (accessToken) {
       if (config.headers) {
         config.headers.Authorization = `Bearer ${accessToken}`;
       }
+      config.headers = { ...config.headers, "Accept-Language": language };
     }
-    console.log(config);
 
     return config;
   },
@@ -31,7 +32,13 @@ request.private.interceptors.response.use(
 );
 
 request.public.interceptors.request.use(
-  (config) => config,
+  (config) => {
+    const language = getStorage("i18nextLng");
+
+    config.headers = { ...config.headers, "Accept-Language": language };
+
+    return config;
+  },
 
   (error) => Promise.reject(error)
 );

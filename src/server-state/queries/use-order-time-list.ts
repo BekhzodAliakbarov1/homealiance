@@ -6,9 +6,9 @@ interface OrderTimeListType {
   interval: string;
 }
 
-export const useServicesListType = () =>
+export const useGetOrderTimeList = () =>
   useQuery("suggested-users", () =>
     request.public
-      .get<OrderTimeListType[]>("/service-type/")
+      .get<OrderTimeListType[]>("/order-time/")
       .then((res) => res.data)
   );

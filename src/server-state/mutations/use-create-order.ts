@@ -4,15 +4,16 @@ import { request } from "../api";
 import { SingleOrderResponse } from "../queries/use-get-orders";
 
 interface CreateOrdeRequest {
-  brand: number;
-  date: string;
-  time: number | string;
-  address: string;
-  description: string;
-  status: "new";
+  brand?: number;
+  date?: string;
+  time?: number | string;
+  address?: string;
+  description?: string;
+  status?: "new";
+  service_type?: number;
 }
 
-export const useSignUp = () =>
+export const useCreateOrder = () =>
   useMutation(
     (register: CreateOrdeRequest) =>
       request.private

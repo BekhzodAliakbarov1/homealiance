@@ -49,10 +49,10 @@ function Navbar() {
         <div className={style.right}>
           <button onClick={() => changeLanguage("ru")}>RU</button>
           <button onClick={() => changeLanguage("uz")}>UZ</button>
-          <h2>+998 (99) 602 66 11</h2>
-          <div className={style.button} style={{ marginRight: "10px" }}>
+          {/* <h2>+998 (99) 602 66 11</h2> */}
+          {/* <div className={style.button} style={{ marginRight: "10px" }}>
             <Link to="/services">{t("navbar.btn")}</Link>
-          </div>
+          </div> */}
 
           {isLogin ? (
             <div

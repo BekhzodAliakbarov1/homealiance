@@ -8,7 +8,8 @@ import { TextInput } from "@mantine/core";
 import { Button } from "@mantine/core";
 import { useLogin } from "../../server-state/mutations/use-login";
 import { useAuth } from "../../state/auth/auth.state";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 interface FormValues {
   email: string; // regular field, same as inferred type
@@ -16,6 +17,8 @@ interface FormValues {
 }
 
 const SignInPage = () => {
+  const { t, i18n } = useTranslation();
+
   const { push } = useHistory();
   const { mutate, isLoading } = useLogin();
   const [loginerror, setLoginerror] = useState(false);
@@ -58,7 +61,7 @@ const SignInPage = () => {
       <Home1 />
       <Container size="sm">
         <Typography align="center" m="20px" variant="h3" component="h2">
-          Sign In
+          {t("signin.h1")}
         </Typography>
         <form onSubmit={onSubmit(handleSubmit)}>
           {loginerror && (
@@ -69,23 +72,34 @@ const SignInPage = () => {
               // component="h2"
               color="red"
             >
-              Email or password incorrect
+              {t("signin.incorrect")}
             </Typography>
           )}
-          <InputWrapper label="Email">
+          <InputWrapper label={t("signin.email")}>
             <TextInput size="md" {...getInputProps("email")} />
           </InputWrapper>
-          <InputWrapper label="Password ">
+          <InputWrapper label={t("signin.password")}>
             <TextInput size="md" {...getInputProps("password")} />
           </InputWrapper>
+
           <Button
             loading={isLoading}
             style={{ marginTop: "20px", marginBottom: "20px" }}
             type="submit"
             fullWidth
           >
-            Submit
+            {t("signin.submit")}
           </Button>
+          <div>
+            <Typography
+              align="center"
+              m="20px"
+              variant="caption"
+              component="h2"
+            >
+              <Link to="/forgotpassword">{t("signin.forgot_pass")}</Link>
+            </Typography>
+          </div>
         </form>
       </Container>
     </>

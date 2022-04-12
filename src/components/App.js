@@ -19,6 +19,8 @@ import Orders from "./OrdersList/Orders";
 import RegisterPage from "./Register/register";
 import SignInPage from "./SignIn/signIn";
 import ProfilePage from "./Profile/profile";
+import ForgotPasswordPage from "./ForgotPassword/forgot-pasword";
+import EditProfilePage from "./EditProfile/edit-profile";
 
 function App() {
   return (
@@ -29,11 +31,17 @@ function App() {
         <NavbarMiddle />
         <NavbarMobile />
         <Switch>
+          <Route exact path="/forgotpassword">
+            <ForgotPasswordPage />
+          </Route>
           <Route exact path="/">
             <Home />
           </Route>
           <Route exact path="/register">
             <RegisterPage />
+          </Route>
+          <Route exact path="/edit-profile">
+            <EditProfilePage />
           </Route>
           <Route exact path="/signin">
             <SignInPage />
@@ -82,7 +90,7 @@ function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 200);
+    window.scrollTo(0, 0);
   }, [pathname]);
 
   return null;

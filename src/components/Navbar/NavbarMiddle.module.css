@@ -76,7 +76,7 @@
     cursor: pointer;
     width: 35px;
     height: 30px;
-    margin: 0px 20px;
+    /* margin: 0px 20px; */
   }
   .mobileMenu {
     background-color: #fff;

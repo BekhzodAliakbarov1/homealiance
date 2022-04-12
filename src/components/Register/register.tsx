@@ -22,6 +22,7 @@ import {
 } from "../../server-state/mutations/use-register";
 import { useUpload } from "../../server-state/mutations/use-upload";
 import { useVerfication } from "../../server-state/mutations/use-confirm-email";
+import { useTranslation } from "react-i18next";
 
 const Input = styled("input")({
   display: "none",
@@ -37,6 +38,7 @@ interface FormValue extends RegionInterface {
   code: string;
   city: string;
   profile_image_id: number;
+  street: string;
 }
 
 const RegisterPage = () => {
@@ -45,6 +47,7 @@ const RegisterPage = () => {
   const upload = useUpload();
   const verification = useVerfication();
   const [mediaUrl, setMediaUrl] = useState("");
+  const { t, i18n } = useTranslation();
 
   const { push } = useHistory();
 
@@ -68,6 +71,7 @@ const RegisterPage = () => {
         code: "",
         city: "",
         profile_image_id: 0,
+        street: "",
       },
 
       validate: {
@@ -86,7 +90,10 @@ const RegisterPage = () => {
           )
             ? null
             : "This number does not exist or is not a valid format please try entering number again. ",
-        // code: (value) => (value.length === 6 ? null : "Verification code error!"),
+        city: (value) =>
+          value.length > 5 ? null : "Please enter full name of city",
+        street: (value) =>
+          value.length > 5 ? null : "Please enter full name of street",
       },
     });
 
@@ -101,7 +108,7 @@ const RegisterPage = () => {
         phone_number: values.phone,
         region: values.region,
         city: values.city,
-        street: "9, Ibn Sino",
+        street: values.street,
         zip_code: "160514",
         profile_image: values.profile_image_id,
       },
@@ -111,8 +118,6 @@ const RegisterPage = () => {
         },
       }
     );
-    // send registerationndata
-    console.log(values);
   };
   const checkVerificationCode = () => {
     const { code, email } = values;
@@ -151,12 +156,12 @@ const RegisterPage = () => {
 
       <Container size="sm">
         <Typography align="center" m="20px" variant="h3" component="h2">
-          Sign Up
+          {t("register.h1")}
         </Typography>
         <form onSubmit={onSubmit(handleSubmit)}>
           <label htmlFor="icon-button-file">
             <Typography mt="20px" variant="body1" component="h2">
-              Profile picture
+              {t("register.profile_picture")}
             </Typography>
             <Input
               accept="image/*"
@@ -195,34 +200,37 @@ const RegisterPage = () => {
               <Avatar size="xl" src={mediaUrl} />
             </div>
           )}
-          <InputWrapper required label="Email">
+          <InputWrapper required label={t("register.email")}>
             <TextInput size="md" {...getInputProps("email")} />
           </InputWrapper>
 
-          <InputWrapper required label="First Name">
+          <InputWrapper required label={t("register.first_name")}>
             <TextInput size="md" {...getInputProps("fName")} />
           </InputWrapper>
-          <InputWrapper required label="Last Name">
+          <InputWrapper required label={t("register.last_name")}>
             <TextInput size="md" {...getInputProps("lName")} />
           </InputWrapper>
-          <InputWrapper required label="Password ">
+          <InputWrapper required label={t("register.password")}>
             <TextInput size="md" {...getInputProps("password")} />
           </InputWrapper>
-          <InputWrapper required label="Confirm password">
+          <InputWrapper required label={t("register.confirm")}>
             <TextInput size="md" {...getInputProps("confirmPassword")} />
           </InputWrapper>
-          <InputWrapper required label="Phone">
+          <InputWrapper required label={t("register.number")}>
             <TextInput size="md" {...getInputProps("phone")} />
           </InputWrapper>
           <Autocomplete
             size="md"
-            label="Region"
+            label={t("register.region")}
             placeholder="Pick one"
             data={regions}
             {...getInputProps("region")}
           />
-          <InputWrapper label="City">
+          <InputWrapper label={t("register.city")} required>
             <TextInput size="md" {...getInputProps("city")} />
+          </InputWrapper>
+          <InputWrapper label={t("register.street")} required>
+            <TextInput size="md" {...getInputProps("street")} />
           </InputWrapper>
           <Button
             disabled={!mediaUrl}
@@ -231,13 +239,14 @@ const RegisterPage = () => {
             type="submit"
             fullWidth
           >
-            Submit
+            {t("register.submit")}
           </Button>
         </form>
         <div>
           <Typography align="center" m="20px" variant="caption" component="h2">
-            Already have an account?
-            <Link to="/signin">Signin</Link>
+            {t("register.already_have_account")}
+
+            <Link to="/signin"> {t("register.signin")}</Link>
           </Typography>
         </div>
       </Container>
@@ -246,11 +255,11 @@ const RegisterPage = () => {
         opened={opened}
         onClose={() => setOpened(false)}
       >
-        <InputWrapper label="Verification code">
+        <InputWrapper label={t("register.code")}>
           <TextInput size="md" {...getInputProps("code")} required />
         </InputWrapper>
         <Button mt="md" fullWidth onClick={checkVerificationCode}>
-          Verify
+          {t("register.submit")}
         </Button>
       </Modal>
     </>
