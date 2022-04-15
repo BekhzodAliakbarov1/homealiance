@@ -24,7 +24,7 @@
     }
   },
   "about1": {
-    "h1": "Уй эҳтиёжлари учун ишончли маслаҳатчи"
+    "h1": "Uy extiyojlari uchuni ishonchli maslahat"
   },
   "about2": {
     "h4": "Uy",
@@ -143,6 +143,7 @@
     "link1": "Xizmatlar",
     "link2": "Biz xaqimizda",
     "link3": "Buyurtmalar",
+    "link4": "Blog",
     "sublink1": "Maishiy texnika",
     "sublink2": "Tozalash",
     "sublink3": "santexnika",
@@ -225,5 +226,11 @@
     "confirm3": "Tugatildi",
     "btn1": "Qidirish",
     "btn2": "Qidirish"
+  },
+  "blog": {
+    "h1": "Blog",
+    "button": "Blogni ko`rish",
+    "back": "Orqaga",
+    "created": "Sana"
   }
 }

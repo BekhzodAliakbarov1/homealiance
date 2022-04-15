@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import logo from "../../assets/images/icon.jpeg";
+import logo from "../../assets/nav.png";
 import style from "./NavbarMiddle.module.css";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { useHistory } from "react-router-dom";
-import { Avatar } from "@mantine/core";
 import { useAuth } from "../../state/auth/auth.state";
 
 function NavbarMiddle() {

@@ -21,6 +21,8 @@ import SignInPage from "./SignIn/signIn";
 import ProfilePage from "./Profile/profile";
 import ForgotPasswordPage from "./ForgotPassword/forgot-pasword";
 import EditProfilePage from "./EditProfile/edit-profile";
+import BlogPage from "./Blog/blog";
+import SingleBlock from "./SingleBlog/single-blog";
 
 function App() {
   return (
@@ -48,6 +50,12 @@ function App() {
           </Route>
           <Route exact path="/profile">
             <ProfilePage />
+          </Route>
+          <Route exact path="/blogs">
+            <BlogPage />
+          </Route>
+          <Route exact path="/blogs/:id">
+            <SingleBlock />
           </Route>
           <Route exact path="/services">
             <Services />

@@ -126,7 +126,7 @@
   },
   "footer": {
     "h1": "Социальная сеть",
-    "h3": "Copyright © 2021 SELEBRO PRO (99) 602 66 11.",
+    "h3": "Copyright © 2021  (99) 602 66 11.",
     "h4": "Terms and Conditions Privacy Policy",
     "devLink": "HBBH"
   },
@@ -143,6 +143,7 @@
     "link1": "Услуги",
     "link2": "О нас",
     "link3": "Заказы",
+    "link4": "Блог",
     "sublink1": "Бытовая техника",
     "sublink2": "Уборка",
     "sublink3": "Сантехника",
@@ -226,5 +227,11 @@
     "confirm3": "Сделанный",
     "btn1": "Поиск",
     "btn2": "Поиск"
+  },
+  "blog": {
+    "h1": "Блог",
+    "button": "Просмотреть блог",
+    "back": "Назад",
+    "created": "Дата"
   }
 }

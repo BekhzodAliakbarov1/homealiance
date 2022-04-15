@@ -2,13 +2,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { QueryClient } from "react-query";
 import { logout } from "../state/auth/auth.actions";
-import { useAuth } from "../state/auth/auth.state";
 
 export const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
       onError(err: any) {
-        if (err.response.status === 401) {
+        if (err?.response?.status === 401) {
           logout();
         }
       },
@@ -17,7 +16,7 @@ export const queryClient = new QueryClient({
     },
     mutations: {
       onError(err: any) {
-        if (err.response.status === 401) {
+        if (err?.response?.status === 401) {
           logout();
         }
       },

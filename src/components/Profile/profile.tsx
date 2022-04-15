@@ -1,4 +1,10 @@
-import { Button, Container, InputWrapper, TextInput } from "@mantine/core";
+import {
+  Button,
+  Container,
+  Grid,
+  InputWrapper,
+  TextInput,
+} from "@mantine/core";
 import { Typography } from "@mui/material";
 import { Avatar, Badge, Modal } from "@mantine/core";
 import { useGetProfile } from "../../server-state/queries/use-get-profile";
@@ -10,6 +16,7 @@ import { useDeleteProfile } from "../../server-state/mutations/use-delete-profil
 import { useChangePassword } from "../../server-state/mutations/use-change-password";
 import { useForm } from "@mantine/form";
 import { useTranslation } from "react-i18next";
+import { Card, Image, Text, Group } from "@mantine/core";
 
 interface ChangePasswordInterface {
   password: string;
@@ -94,46 +101,59 @@ const ProfilePage = () => {
       <br />
       <br />
       <br />
-      <Container size="md">
+
+      <Container>
         <Typography align="center" m="20px" variant="h4" component="h2">
           {t("profile.h1")}
         </Typography>
-        <Avatar radius="xl" size={100} src={data?.profile_image?.file} />
-        <Typography mt="20px" mb="20px" variant="subtitle1" component="h2">
-          Email: {data?.email}
-        </Typography>
-        <Typography mt="20px" mb="20px" variant="subtitle1" component="h2">
-          {t("profile.name")}: {data?.first_name} {data?.last_name}
-        </Typography>
-        <Typography mt="20px" mb="20px" variant="subtitle1" component="h2">
-          {t("profile.number")}: {data?.phone_number}
-        </Typography>
-        <Typography mt="20px" mb="20px" variant="subtitle1" component="h2">
-          {t("profile.location")}: {data?.region} {t("profile.region")}{" "}
-          {data?.city} {t("profile.city")} {data?.street} {t("profile.street")}
-        </Typography>
-        {t("profile.type")}:
-        <Badge
-          variant="gradient"
-          mb="20px"
-          gradient={{ from: "teal", to: "lime", deg: 105 }}
-        >
-          {data?.user_type}
-        </Badge>
-        <div
-          style={{
-            marginBottom: "50px",
-            marginTop: "20px",
-            display: "flex",
-            justifyContent: "space-between",
-            flexWrap: "wrap",
-          }}
-        >
+        <Card shadow="sm" p="lg">
+          <Card.Section>
+            {data?.profile_image && (
+              <Image
+                fit="cover"
+                src={data?.profile_image.file}
+                height={560}
+                alt="Norway"
+              />
+            )}
+          </Card.Section>
+
+          <Group position="apart" style={{ marginBottom: 5, marginTop: 20 }}>
+            <Text weight={500}>
+              {t("profile.name")}: {data?.first_name} {data?.last_name}
+            </Text>
+            <Badge color="pink" variant="light">
+              {data?.user_type}
+            </Badge>
+          </Group>
+          <Group position="apart" style={{ marginBottom: 5, marginTop: 20 }}>
+            <Text weight={500}>Email: {data?.email}</Text>
+          </Group>
+          <Group position="apart" style={{ marginBottom: 5, marginTop: 20 }}>
+            <Text weight={500}>
+              {t("profile.number")}: {data?.phone_number}
+            </Text>
+          </Group>
+          <Group position="apart" style={{ marginBottom: 5, marginTop: 20 }}>
+            <Text weight={500}>
+              {t("profile.location")}: {data?.region} {t("profile.region")}{" "}
+              {data?.city} {t("profile.city")} {data?.street}{" "}
+              {t("profile.street")}
+            </Text>
+          </Group>
+
+          <Button
+            variant="light"
+            color="blue"
+            fullWidth
+            style={{ marginTop: 14 }}
+          >
+            {t("home1.link")}
+          </Button>
           <Button
             onClick={() => push("/edit-profile", { ...data })}
-            styles={{
-              root: { width: "20%", minWidth: "140px", margin: "10px" },
-            }}
+            style={{ marginTop: 14 }}
+            fullWidth
             variant="gradient"
             gradient={{ from: "indigo", to: "cyan" }}
           >
@@ -141,11 +161,10 @@ const ProfilePage = () => {
           </Button>
           <Button
             onClick={() => setOpened3(true)}
-            styles={{
-              root: { width: "20%", minWidth: "140px", margin: "10px" },
-            }}
             variant="gradient"
             gradient={{ from: "teal", to: "lime", deg: 105 }}
+            style={{ marginTop: 14 }}
+            fullWidth
           >
             {t("profile.change_password")}
           </Button>
@@ -153,23 +172,21 @@ const ProfilePage = () => {
             onClick={() => setOpened(true)}
             variant="gradient"
             gradient={{ from: "#ed6ea0", to: "#ec8c69", deg: 35 }}
-            styles={{
-              root: { width: "20%", minWidth: "140px", margin: "10px" },
-            }}
+            style={{ marginTop: 14 }}
+            fullWidth
           >
             {t("profile.log_out")}
           </Button>
           <Button
             onClick={() => setOpened2(true)}
-            styles={{
-              root: { width: "20%", minWidth: "140px", margin: "10px" },
-            }}
             variant="gradient"
+            style={{ marginTop: 14 }}
+            fullWidth
             gradient={{ from: "orange", to: "red" }}
           >
             {t("profile.delete")}
           </Button>
-        </div>
+        </Card>
       </Container>
       {/* logout modal */}
       <Modal

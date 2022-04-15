@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../../assets/images/icon.jpeg";
+import logo from "../../assets/nav.png";
 import style from "./NavbarMobile.module.css";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
@@ -100,6 +100,14 @@ function NavbarMobile() {
             }}
           >
             UZ
+          </button>
+          <button
+            onClick={() => {
+              changeLanguage("en");
+              setClick(false);
+            }}
+          >
+            EN
           </button>
         </div>
       </div>

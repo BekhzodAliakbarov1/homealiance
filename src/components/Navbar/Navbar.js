@@ -1,16 +1,14 @@
 import React from "react";
 import style from "./Navbar.module.css";
-import logo from "../../assets/images/icon.jpeg";
+import logo from "../../assets/nav.png";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useAuth } from "../../state/auth/auth.state";
 import { Avatar } from "@mantine/core";
 import { useHistory } from "react-router-dom";
-import { useStore } from "react-redux";
 
 function Navbar() {
   const { push } = useHistory();
-  const { getState } = useStore();
 
   const {
     firstName,
@@ -18,6 +16,7 @@ function Navbar() {
   } = useAuth();
   const isLogin = Boolean(access);
   const { t, i18n } = useTranslation();
+  console.log(i18n.language);
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
   };
@@ -44,15 +43,15 @@ function Navbar() {
             <li>
               <Link to="/orders">{t("navbar.link3")}</Link>
             </li>
+            <li>
+              <Link to="/blogs">{t("navbar.link4")}</Link>
+            </li>
           </ul>
         </div>
         <div className={style.right}>
           <button onClick={() => changeLanguage("ru")}>RU</button>
           <button onClick={() => changeLanguage("uz")}>UZ</button>
-          {/* <h2>+998 (99) 602 66 11</h2> */}
-          {/* <div className={style.button} style={{ marginRight: "10px" }}>
-            <Link to="/services">{t("navbar.btn")}</Link>
-          </div> */}
+          <button onClick={() => changeLanguage("en")}>EN</button>
 
           {isLogin ? (
             <div
