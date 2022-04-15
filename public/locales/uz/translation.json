@@ -33,7 +33,7 @@
     "p": "Biz butun mamlakat bo‘ylab «oilalarga” uy sharoitida «qulay, keng qamrovli” va «professional” xizmatlarni taqdim etishga intilamiz, uy egalari jihozlarni taʼmirlash, isitish va havoni tozalash, havo sifati, sanitariya-tesisat va elektr taʼminotiga bo‘lgan ehtiyojlarini qondirish uchun «ishonadigan” pudratchilarni topishlari mumkin. xizmatlar."
   },
   "about3": {
-    "h2": "Ijrochi direktori",
+    "h2": "Nurulokh Nabijonov |    Ijrochi direktori",
     "p": "Biz mijozlarimizga «talab bo‘yicha”, «eng yaxshi” uy «xizmatlari” ni «taqdim etish” uchun «qatʼiymiz”. Bizning maqsadimiz dunyodagi har qanday oila uchun aniq tanlov bo‘lishdir."
   },
   "about4": {
@@ -81,7 +81,12 @@
     "h1": "Buyurtma berish",
     "h3": "Uchrashuvni belgilash uchun xizmatni tanlang",
     "formh1": "Buyurtmani tasdiqlash",
-    "formlink": "Buyurtma qilish"
+    "formlink": "Buyurtma qilish",
+    "one": "Hizmat",
+    "two": "Hizmat turi",
+    "three": "Tavsif",
+    "four": "Manzil",
+    "date": "Sana"
   },
   "contact": {
     "h1": "Buyurtma berish",
@@ -126,7 +131,7 @@
   },
   "footer": {
     "h1": "Ijtimoiy tarmoq",
-    "h3": "Copyright © 2021  (99) 602 66 11.",
+    "h3": "Copyright © 2021  (33) 211 99 27.",
     "h4": "Terms and Conditions Privacy Policy",
     "devLink": ""
   },

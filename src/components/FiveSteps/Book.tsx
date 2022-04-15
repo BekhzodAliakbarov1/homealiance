@@ -38,7 +38,8 @@ const Book = () => {
         address: `${state?.district} district ${state?.street} street`,
         // brand: 2,
         date,
-        description: state.description,
+        description:
+          state.description === "" ? "default description" : state.description,
         status: "new",
         time: 6,
         service_type: state.serviceType?.id,
@@ -84,7 +85,7 @@ const Book = () => {
               margin: "10px 0px",
             }}
           >
-            <h3>Service: </h3>
+            <h3>{t("book.one")}: </h3>
             <h4 style={{ marginLeft: "10px", color: "#4747b9" }}>
               {state?.service?.name}
             </h4>
@@ -97,7 +98,7 @@ const Book = () => {
               margin: "10px 0px",
             }}
           >
-            <h3>Service type: </h3>
+            <h3>{t("book.two")}: </h3>
             <h4 style={{ marginLeft: "10px", color: "#4747b9" }}>
               {state?.serviceType?.name}
             </h4>
@@ -110,7 +111,7 @@ const Book = () => {
               margin: "10px 0px",
             }}
           >
-            <h3>Description: </h3>
+            <h3>{t("book.three")}: </h3>
             <h4 style={{ marginLeft: "10px", color: "#4747b9" }}>
               {state?.description}
             </h4>
@@ -123,7 +124,7 @@ const Book = () => {
               margin: "10px 0px",
             }}
           >
-            <h3>Location: </h3>
+            <h3>{t("book.four")}: </h3>
             <h4 style={{ marginLeft: "10px", color: "#4747b9" }}>
               {state?.district} district {state?.street} street
             </h4>
@@ -136,7 +137,7 @@ const Book = () => {
               margin: "10px 0px",
             }}
           >
-            <h3>Date: </h3>
+            <h3>{t("book.date")}: </h3>
             <h4 style={{ marginLeft: "10px", color: "#4747b9" }}>
               {state?.day} day at {state?.time} oclock
             </h4>

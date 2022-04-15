@@ -31,7 +31,7 @@ function NavbarMiddle() {
         <div className={style.right}>
           {/* <button onClick={() => changeLanguage("ru")}>RU</button>
           <button onClick={() => changeLanguage("uz")}>UZ</button> */}
-          {/* <h2>+998 (99) 602 66 11</h2> */}
+          {/* <h2>+998 (33) 211 99 27</h2> */}
           {/* <div className={style.button}>
             <Link to="/services">{t("navbar.btn")}</Link>
           </div> */}
