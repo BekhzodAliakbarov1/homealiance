@@ -145,7 +145,7 @@
   color: #000 !important;
 }
 
-.form a {
+.form .button {
   display: inline-block;
   font-size: 16px;
   line-height: 1;
@@ -163,8 +163,9 @@
   color: #ffffff;
   border-color: #2c37b7;
   background-color: #2c37b7;
+  cursor: pointer;
 }
-.form a:hover {
+.form .button:hover {
   color: #2c37b7;
   border-color: #ffffff;
   background-color: #ffffff;

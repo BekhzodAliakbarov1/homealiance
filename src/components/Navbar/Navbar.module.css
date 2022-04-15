@@ -81,7 +81,7 @@
   text-decoration: none;
   -webkit-border-radius: 8px;
   border-radius: 8px;
-  padding: 19px 22px;
+  padding: 13px;
   font-family: "DM Sans", sans-serif;
   border-width: 1px;
   border-style: solid;
@@ -104,13 +104,13 @@
 .right button {
   cursor: pointer;
   display: inline-block;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1;
   font-weight: 700;
   text-align: center;
   -webkit-border-radius: 8px;
   border-radius: 8px;
-  padding: 10px 15px;
+  padding: 10px;
   font-family: "DM Sans", sans-serif;
   letter-spacing: 0.02em;
   -webkit-transition: background 0.2s, border-color 0.2s,

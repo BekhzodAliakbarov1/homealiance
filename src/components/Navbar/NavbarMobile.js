@@ -1,11 +1,16 @@
 import React, { useState } from "react";
-import logo from "../../assets/images/icon.jpeg";
+import logo from "../../assets/nav.png";
 import style from "./NavbarMobile.module.css";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useAuth } from "../../state/auth/auth.state";
 function NavbarMobile() {
   const { t, i18n } = useTranslation();
+  const {
+    tokens: { access },
+  } = useAuth();
+  const isLogin = Boolean(access);
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
   };
@@ -23,7 +28,7 @@ function NavbarMobile() {
           ></div>
         </Link>
         <div className={style.right}>
-          <h2>+998 (99) 602 66 11</h2>
+          {/* <h2>+998 (99) 602 66 11</h2> */}
           {click ? (
             <AiOutlineClose onClick={() => setClick(false)} />
           ) : (
@@ -39,11 +44,21 @@ function NavbarMobile() {
         }
       >
         <div className={style.content}>
-          <div className={style.button}>
+          {/* <div className={style.button} style={{ margin: "10px 0px" }}>
             <Link onClick={() => setClick(false)} to="/services">
               {t("navbar.btn")}
             </Link>
-          </div>
+          </div> */}
+          {/* <div className={style.button} style={{ margin: "10px 0px" }}>
+            <Link onClick={() => setClick(false)} to="/profile">
+              Profile page
+            </Link>
+          </div> */}
+          {isLogin && (
+            <Link onClick={() => setClick(false)} to="/profile">
+              Profile
+            </Link>
+          )}
           <Link onClick={() => setClick(false)} to="/services">
             {t("navbar.link1")}
           </Link>
@@ -85,6 +100,14 @@ function NavbarMobile() {
             }}
           >
             UZ
+          </button>
+          <button
+            onClick={() => {
+              changeLanguage("en");
+              setClick(false);
+            }}
+          >
+            EN
           </button>
         </div>
       </div>

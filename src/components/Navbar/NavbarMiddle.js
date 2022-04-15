@@ -1,15 +1,20 @@
 import React, { useState } from "react";
-import logo from "../../assets/images/icon.jpeg";
+import logo from "../../assets/nav.png";
 import style from "./NavbarMiddle.module.css";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useAuth } from "../../state/auth/auth.state";
 
 function NavbarMiddle() {
   const { t, i18n } = useTranslation();
-  const changeLanguage = (lang) => {
-    i18n.changeLanguage(lang);
-  };
+  const {
+    tokens: { access },
+  } = useAuth();
+  const isLogin = Boolean(access);
+  // const changeLanguage = (lang) => {
+  //   i18n.changeLanguage(lang);
+  // };
   const [click, setClick] = useState(false);
   if (window.location.pathname.includes("admin")) {
     return null;
@@ -24,12 +29,13 @@ function NavbarMiddle() {
           ></div>
         </Link>
         <div className={style.right}>
-          <button onClick={() => changeLanguage("ru")}>RU</button>
-          <button onClick={() => changeLanguage("uz")}>UZ</button>
-          <h2>+998 (99) 602 66 11</h2>
-          <div className={style.button}>
+          {/* <button onClick={() => changeLanguage("ru")}>RU</button>
+          <button onClick={() => changeLanguage("uz")}>UZ</button> */}
+          {/* <h2>+998 (99) 602 66 11</h2> */}
+          {/* <div className={style.button}>
             <Link to="/services">{t("navbar.btn")}</Link>
-          </div>
+          </div> */}
+
           {click ? (
             <AiOutlineClose onClick={() => setClick(false)} />
           ) : (
@@ -45,6 +51,11 @@ function NavbarMiddle() {
         }
       >
         <div className={style.content}>
+          {isLogin && (
+            <Link onClick={() => setClick(false)} to="/profile">
+              Profile
+            </Link>
+          )}
           {/* Linklarni jsonga tqw kere */}
           <Link to="/services" onClick={() => setClick(false)}>
             {t("navbar.link1")}
