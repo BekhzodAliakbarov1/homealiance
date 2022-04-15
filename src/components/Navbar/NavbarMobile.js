@@ -28,7 +28,7 @@ function NavbarMobile() {
           ></div>
         </Link>
         <div className={style.right}>
-          {/* <h2>+998 (99) 602 66 11</h2> */}
+          {/* <h2>+998 (33) 211 99 27</h2> */}
           {click ? (
             <AiOutlineClose onClick={() => setClick(false)} />
           ) : (

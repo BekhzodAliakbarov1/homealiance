@@ -1,4 +1,4 @@
-import { Badge, Container } from "@mantine/core";
+import { Badge, Container, Loader } from "@mantine/core";
 import Typography from "@mui/material/Typography";
 import React from "react";
 import {
@@ -14,11 +14,12 @@ import { useGetBlogs } from "../../server-state/queries/use-get-blogs";
 import { useHistory } from "react-router-dom";
 import { useGetBlogImages } from "../../server-state/queries/use-get-blog-images";
 import { useTranslation } from "react-i18next";
+import Loading from "../Loading/Loader";
 
 const BlogPage = () => {
   const theme = useMantineTheme();
   const { push } = useHistory();
-  const { data } = useGetBlogs();
+  const { data, isLoading } = useGetBlogs();
   const images = useGetBlogImages();
   const { t, i18n } = useTranslation();
 
@@ -34,7 +35,17 @@ const BlogPage = () => {
         <Typography align="center" m="20px" variant="h4" component="h2">
           {t("blog.h1")}
         </Typography>
-        {
+
+        {isLoading ? (
+          <Loader
+            style={{
+              margin: "auto",
+              transform: "translateX(50%)",
+              position: "absolute",
+              left: "48%",
+            }}
+          />
+        ) : (
           <Grid gutter="xl" grow>
             {data?.pages[0].results.map((blog) => {
               return (
@@ -86,7 +97,7 @@ const BlogPage = () => {
               );
             })}
           </Grid>
-        }
+        )}
       </Container>
       <br />
       <br />
